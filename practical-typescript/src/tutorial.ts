@@ -16,3 +16,12 @@ age = age + 5;
 
 // gretings = 24; // not possible
 // age = "-5"; // not possible
+
+// -------------------Union Type --------------------
+let tax: string | number = 10;
+tax = 100;
+tax = "10$";
+
+let requestStatus: "pending" | "Success" | "error" = "pending";
+
+requestStatus = 
