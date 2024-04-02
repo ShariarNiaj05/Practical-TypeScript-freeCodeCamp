@@ -24,4 +24,9 @@ tax = "10$";
 
 let requestStatus: "pending" | "Success" | "error" = "pending";
 
-requestStatus = 
+requestStatus = "Success"
+
+
+let notSure: any = 4;
+notSure = 'maybe a string instead';
+notSure = false; // okay, definitely a boolean
