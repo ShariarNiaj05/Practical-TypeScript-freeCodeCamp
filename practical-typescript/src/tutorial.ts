@@ -18,7 +18,7 @@ age = age + 5;
 // age = "-5"; // not possible
 
 // -------------------Union Type --------------------
-let tax: string | number = 10;
+/* let tax: string | number = 10;
 tax = 100;
 tax = "10$";
 
@@ -29,4 +29,18 @@ requestStatus = "Success"
 
 let notSure: any = 4;
 notSure = 'maybe a string instead';
-notSure = false; // okay, definitely a boolean
+notSure = false; // okay, definitely a boolean */
+
+const books = ["1984", "Brave new world", "Fahrenheit 451"];
+
+let foundBook: string | undefined;
+
+for (let book of books) {
+  if (book === "1984") {
+    foundBook = book;
+    foundBook = foundBook.toUpperCase();
+    break;
+  }
+}
+
+console.log(foundBook);
