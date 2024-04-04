@@ -47,10 +47,21 @@ console.log(foundBook);
  */
 
 // -------------Challenges for any -------------
-let discount: number | string = 20;
+/* let discount: number | string = 20;
 discount = "20%";
 // discount = true; // This will result in a TypeScript error
 
 let orderStatus: "processing" | "shipped" | "delivered" = "processing";
 orderStatus = "shipped";
-// orderStatus = 'cancelled'; // This will result in a TypeScript error
+// orderStatus = 'cancelled'; // This will result in a TypeScript error */
+
+// --------Arrays - Fundamentals-------
+
+let prices: number[] = [100, 75, 42, 34];
+// prices.push("hello") // error
+
+let fruit: string[] = ["apple", "orange"];
+
+// let randomValues: [] = "Hello"; //Type 'string' is not assignable to type '[]'
+
+let array: (string | boolean)[] = ['apple', true, 'orange', false];
