@@ -57,11 +57,24 @@ orderStatus = "shipped";
 
 // --------Arrays - Fundamentals-------
 
-let prices: number[] = [100, 75, 42, 34];
+/* let prices: number[] = [100, 75, 42, 34];
 // prices.push("hello") // error
 
 let fruit: string[] = ["apple", "orange"];
 
 // let randomValues: [] = "Hello"; //Type 'string' is not assignable to type '[]'
 
-let array: (string | boolean)[] = ['apple', true, 'orange', false];
+let array: (string | boolean)[] = ['apple', true, 'orange', false]; */
+
+// Array challenge 
+// 1. Temperatures
+let temperatures: number[] = [20, 25, 30];
+// temperatures.push('hot'); // This will result in a TypeScript error
+
+// 2. Colors
+let colors: string[] = ['red', 'green', 'blue'];
+// colors.push(true); // This will result in a TypeScript error
+
+// 3. Mixed Array
+let mixedArray: (number | string)[] = [1, 'two', 3];
+// mixedArray.push(true); // This will result in a TypeScript error
