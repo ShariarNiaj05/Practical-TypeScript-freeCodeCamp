@@ -66,7 +66,13 @@ let fruit: string[] = ["apple", "orange"];
 
 let array: (string | boolean)[] = ['apple', true, 'orange', false]; */
 
-// Array challenge 
+// Array challenge
+
+/* Create an array temperatures of type number[] and assign it some values. Then, try to add a string value to it.
+Create an array colors of type string[] and assign it some values. Then, try to add a boolean value to it.
+Create an array mixedArray of type(number | string)[] and assign it some values.Then, try to add a boolean value to it. */
+
+
 // 1. Temperatures
 let temperatures: number[] = [20, 25, 30];
 // temperatures.push('hot'); // This will result in a TypeScript error
