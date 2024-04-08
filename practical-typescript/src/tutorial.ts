@@ -57,14 +57,14 @@ orderStatus = "shipped";
 
 // --------Arrays - Fundamentals-------
 
-/* let prices: number[] = [100, 75, 42, 34];
+let prices: number[] = [100, 75, 42, 34];
 // prices.push("hello") // error
 
 let fruit: string[] = ["apple", "orange"];
 
 // let randomValues: [] = "Hello"; //Type 'string' is not assignable to type '[]'
 
-let array: (string | boolean)[] = ['apple', true, 'orange', false]; */
+let array: (string | boolean)[] = ['apple', true, 'orange', false];
 
 // Array challenge
 
