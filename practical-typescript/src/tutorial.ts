@@ -57,14 +57,14 @@ orderStatus = "shipped";
 
 // --------Arrays - Fundamentals-------
 
-let prices: number[] = [100, 75, 42, 34];
+/* let prices: number[] = [100, 75, 42, 34];
 // prices.push("hello") // error
 
 let fruit: string[] = ["apple", "orange"];
 
 // let randomValues: [] = "Hello"; //Type 'string' is not assignable to type '[]'
 
-let array: (string | boolean)[] = ['apple', true, 'orange', false];
+let array: (string | boolean)[] = ['apple', true, 'orange', false]; */
 
 // Array challenge
 
@@ -72,8 +72,7 @@ let array: (string | boolean)[] = ['apple', true, 'orange', false];
 Create an array colors of type string[] and assign it some values. Then, try to add a boolean value to it.
 Create an array mixedArray of type(number | string)[] and assign it some values.Then, try to add a boolean value to it. */
 
-
-// 1. Temperatures
+/* // 1. Temperatures
 let temperatures: number[] = [20, 25, 30];
 // temperatures.push('hot'); // This will result in a TypeScript error
 
@@ -83,4 +82,36 @@ let colors: string[] = ['red', 'green', 'blue'];
 
 // 3. Mixed Array
 let mixedArray: (number | string)[] = [1, 'two', 3];
-// mixedArray.push(true); // This will result in a TypeScript error
+// mixedArray.push(true); // This will result in a TypeScript error */
+
+// ----------------Objects - Fundamentals
+
+let car: { brand: string; year: number } = {
+  brand: "BMW",
+  year: 2015,
+};
+
+car.brand = "Ford";
+
+// car.color = "Read" // error
+
+let car1: { brand: string; year: number } = {
+  brand: "Audi",
+  year: 2019,
+};
+
+let book = { title: "book", cost: 20 };
+let pen = { title: "pen", cost: 20 };
+let notebook = { title: "notebook" };
+
+let items: { title: string; cost: number }[] = [book, pen, notebook];
+
+//for notebook: Property 'cost' is missing in type '{ title: string; }' but required in type '{ title: string; cost: number; }
+
+let item1: { title: string; cost?: number }[] = [book, pen, notebook];
+
+// now cost is optional
+
+let item2: { readonly title: string; cost?: number }[] = [book, pen, notebook];
+
+items[0].title = 'new book'; // Error: Cannot assign to 'title' because it is a read-only property
