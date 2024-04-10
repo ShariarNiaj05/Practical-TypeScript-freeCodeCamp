@@ -117,17 +117,17 @@ let item2: { readonly title: string; cost?: number }[] = [book, pen, notebook];
 items[0].title = 'new book'; // Error: Cannot assign to 'title' because it is a read-only property */
 
 // Object Challenges
+// 1. Create an object bike of type { brand: string, year: number } and assign it some values. Then, try to assign a string to the year property.
+let bike: { brand: string; year: number } = { brand: 'Yamaha', year: 2010 };
+// bike.year = 'old'; // This will result in a TypeScript error
 
-/* 1. Create an array temperatures of type number[] and assign it some values. Then, try to add a string value to it. */
+// 2. Create an object laptop of type { brand: string, year: number } and try to assign an object with missing year property to it.
 
-let temperatures: number[] = [25, 28, 17, 32];
-// temperatures.push('hot'); // This will result in a TypeScript error
+let laptop: { brand: string; year: number } = { brand: 'Dell', year: 2020 };
+// let laptop2: { brand: string, year: number } = { brand: 'HP' }; // This will result in a TypeScript error
 
-// 2. Create an array colors of type string[] and assign it some values. Then, try to add a boolean value to it.
-
-let color: string[] = ["red", "green", "blue"];
-// colors.push(true); // This will result in a TypeScript error
-
-// 3. Create an array mixedArray of type (number | string)[] and assign it some values. Then, try to add a boolean value to it.
-let mixedArray: (number | string)[] = [1, 'two', 3];
-// mixedArray.push(true); // This will result in a TypeScript error
+// 3. Create an array products of type { title: string, price?: number }[] and assign it some values. Then, try to add an object with a price property of type string to it.
+let product1 = { title: 'Shirt', price: 20 };
+let product2 = { title: 'Pants' };
+let products: { title: string; price?: number }[] = [product1, product2];
+// products.push({ title: 'Shoes', price: 'expensive' }); // This will result in a TypeScript error
