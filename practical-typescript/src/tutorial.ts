@@ -86,7 +86,7 @@ let mixedArray: (number | string)[] = [1, 'two', 3];
 
 // ----------------Objects - Fundamentals
 
-let car: { brand: string; year: number } = {
+/* let car: { brand: string; year: number } = {
   brand: "BMW",
   year: 2015,
 };
@@ -114,4 +114,20 @@ let item1: { title: string; cost?: number }[] = [book, pen, notebook];
 
 let item2: { readonly title: string; cost?: number }[] = [book, pen, notebook];
 
-items[0].title = 'new book'; // Error: Cannot assign to 'title' because it is a read-only property
+items[0].title = 'new book'; // Error: Cannot assign to 'title' because it is a read-only property */
+
+// Object Challenges
+
+/* 1. Create an array temperatures of type number[] and assign it some values. Then, try to add a string value to it. */
+
+let temperatures: number[] = [25, 28, 17, 32];
+// temperatures.push('hot'); // This will result in a TypeScript error
+
+// 2. Create an array colors of type string[] and assign it some values. Then, try to add a boolean value to it.
+
+let color: string[] = ["red", "green", "blue"];
+// colors.push(true); // This will result in a TypeScript error
+
+// 3. Create an array mixedArray of type (number | string)[] and assign it some values. Then, try to add a boolean value to it.
+let mixedArray: (number | string)[] = [1, 'two', 3];
+// mixedArray.push(true); // This will result in a TypeScript error
