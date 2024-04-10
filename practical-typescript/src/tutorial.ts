@@ -115,7 +115,7 @@ let item1: { title: string; cost?: number }[] = [book, pen, notebook];
 let item2: { readonly title: string; cost?: number }[] = [book, pen, notebook];
 
 items[0].title = 'new book'; // Error: Cannot assign to 'title' because it is a read-only property */
-
+/* 
 // Object Challenges
 // 1. Create an object bike of type { brand: string, year: number } and assign it some values. Then, try to assign a string to the year property.
 let bike: { brand: string; year: number } = { brand: 'Yamaha', year: 2010 };
@@ -130,4 +130,7 @@ let laptop: { brand: string; year: number } = { brand: 'Dell', year: 2020 };
 let product1 = { title: 'Shirt', price: 20 };
 let product2 = { title: 'Pants' };
 let products: { title: string; price?: number }[] = [product1, product2];
-// products.push({ title: 'Shoes', price: 'expensive' }); // This will result in a TypeScript error
+// products.push({ title: 'Shoes', price: 'expensive' }); // This will result in a TypeScript error */
+
+
+// Functions - Fundamentals 
