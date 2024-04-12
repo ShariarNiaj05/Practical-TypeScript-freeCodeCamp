@@ -132,12 +132,14 @@ let product2 = { title: 'Pants' };
 let products: { title: string; price?: number }[] = [product1, product2];
 // products.push({ title: 'Shoes', price: 'expensive' }); // This will result in a TypeScript error */
 
-
 // Functions - Fundamentals
 
-
-function sayHi(name: string) {
+/* function sayHi(name: string) {
   console.log(`Hello there ${name.toUpperCase()}!!!`);
-}
+} */
 
-sayHi('john');
+const sayHi = (name: string): void => {
+  console.log(`Hello there ${name.toUpperCase()}!!!`);
+};
+
+sayHi("john");
