@@ -138,8 +138,8 @@ let products: { title: string; price?: number }[] = [product1, product2];
   console.log(`Hello there ${name.toUpperCase()}!!!`);
 } */
 
-const sayHi = (name: string): void => {
+/* const sayHi = (name: string): void => {
   console.log(`Hello there ${name.toUpperCase()}!!!`);
 };
 
-sayHi("john");
+sayHi("john"); */
