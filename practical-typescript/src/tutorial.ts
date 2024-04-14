@@ -143,3 +143,5 @@ let products: { title: string; price?: number }[] = [product1, product2];
 };
 
 sayHi("john"); */
+// sayHi(3)
+// sayHi('peter', 'random');
