@@ -133,21 +133,34 @@ let products: { title: string; price?: number }[] = [product1, product2];
 // products.push({ title: 'Shoes', price: 'expensive' }); // This will result in a TypeScript error */
 
 // Functions - Fundamentals
-
-/* function sayHi(name: string) {
+/* 
+function sayHi(name: string) {
   console.log(`Hello there ${name.toUpperCase()}!!!`);
 } */
 
-/* const sayHi = (name: string): void => {
+/*  const sayHi = (name: string): void => {
   console.log(`Hello there ${name.toUpperCase()}!!!`);
 };
 
-sayHi("john"); */
-// sayHi(3)
-// sayHi('peter', 'random');
+sayHi("john"); 
+sayHi(3) // error
+sayHi('peter', 'random'); //error */
 
-function calculateDiscount(price: number): number {
+/* function calculateDiscount(price: number): number {
   return price * 0.9;
 }
 
 const finalPrice = calculateDiscount(200);
+ */
+
+// not recommended the below format
+
+function addThree(number: any) {
+  let anotherNumber: number = 3;
+  return number + anotherNumber;
+}
+
+const result = addThree(2);
+const someValue = result;
+
+someValue.myMethod(); // run time error
