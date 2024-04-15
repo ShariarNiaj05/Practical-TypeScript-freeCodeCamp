@@ -145,3 +145,9 @@ let products: { title: string; price?: number }[] = [product1, product2];
 sayHi("john"); */
 // sayHi(3)
 // sayHi('peter', 'random');
+
+function calculateDiscount(price: number): number {
+  return price * 0.9;
+}
+
+const finalPrice = calculateDiscount(200);
