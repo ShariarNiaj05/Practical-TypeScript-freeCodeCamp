@@ -164,3 +164,26 @@ const result = addThree(2);
 const someValue = result;
 
 someValue.myMethod(); // run time error
+
+// Function Challenges
+
+/****
+ * Create a new array of names.
+ * Write a new function that checks if a name is in your array. This function should take a name as a parameter and return a boolean.
+ * Use this function to check if various names are in your array and log the results.
+ *
+ */
+
+const arrayOfName: string[] = ["Shariar", "Islam"];
+
+const isNameInList = (name: string): boolean => {
+  return arrayOfName.includes(name);
+};
+
+const nameToCheck: string = "Shariar";
+
+if (isNameInList(nameToCheck)) {
+  console.log("Name is in the list");
+} else {
+  console.log("Provided name is not in the list");
+}
