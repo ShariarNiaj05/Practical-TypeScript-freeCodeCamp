@@ -173,7 +173,7 @@ someValue.myMethod(); // run time error
  * Use this function to check if various names are in your array and log the results.
  *
  */
-
+/* 
 const arrayOfName: string[] = ["Shariar", "Islam"];
 
 const isNameInList = (name: string): boolean => {
@@ -187,3 +187,7 @@ if (isNameInList(nameToCheck)) {
 } else {
   console.log("Provided name is not in the list");
 }
+ */
+
+
+// Functions - Optional and Default Parameters
