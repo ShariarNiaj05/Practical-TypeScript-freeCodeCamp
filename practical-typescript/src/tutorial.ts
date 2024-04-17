@@ -197,3 +197,6 @@ function calculatePrice(price: number, discount?: number) {
 
 const priceAfterDiscount = calculatePrice(100, 20);
 console.log(priceAfterDiscount); // output 80
+
+let priceWithoutDiscount = calculatePrice(300);
+console.log(priceWithoutDiscount); // Output: 300
