@@ -191,7 +191,7 @@ if (isNameInList(nameToCheck)) {
 
 // Functions - Optional and Default Parameters
 
-function calculatePrice(price: number, discount?: number) {
+/* function calculatePrice(price: number, discount?: number) {
   return price - (discount || 0);
 }
 
@@ -199,4 +199,4 @@ const priceAfterDiscount = calculatePrice(100, 20);
 console.log(priceAfterDiscount); // output 80
 
 let priceWithoutDiscount = calculatePrice(300);
-console.log(priceWithoutDiscount); // Output: 300
+console.log(priceWithoutDiscount); // Output: 300 */
