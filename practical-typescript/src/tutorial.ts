@@ -213,7 +213,7 @@ console.log(scoreWithoutPenalty); // Output: 300 */
 
 // Function - rest parameter
 
-function sum(message: string, ...numbers: number[]): string {
+/* function sum(message: string, ...numbers: number[]): string {
   const doubled = numbers.map((num) => num * 2);
   console.log(doubled);
 
@@ -223,4 +223,4 @@ function sum(message: string, ...numbers: number[]): string {
   return `${message} ${total}`;
 }
 
-let funResult = sum('The total is:', 1, 2, 3, 4, 5); // result will be "The total is: 15"
+let funResult = sum('The total is:', 1, 2, 3, 4, 5); // result will be "The total is: 15" */
