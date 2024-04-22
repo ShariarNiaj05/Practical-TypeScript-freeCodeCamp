@@ -224,3 +224,11 @@ console.log(scoreWithoutPenalty); // Output: 300 */
 }
 
 let funResult = sum('The total is:', 1, 2, 3, 4, 5); // result will be "The total is: 15" */
+
+
+// Functions - "void" return type
+function logMessage(message: string): void {
+  console.log(message);
+}
+
+logMessage('Hello, TypeScript!'); // Output: Hello, TypeScript!
