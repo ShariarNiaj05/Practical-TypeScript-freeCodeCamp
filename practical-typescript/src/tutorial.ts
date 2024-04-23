@@ -227,8 +227,18 @@ let funResult = sum('The total is:', 1, 2, 3, 4, 5); // result will be "The tota
 
 
 // Functions - "void" return type
-function logMessage(message: string): void {
+/* function logMessage(message: string): void {
   console.log(message);
 }
 
-logMessage('Hello, TypeScript!'); // Output: Hello, TypeScript!
+logMessage('Hello, TypeScript!'); // Output: Hello, TypeScript! */
+
+
+// It's important to note that in TypeScript, a function that is declared with a void return type can still return a value, but the value will be ignored.For example, the following code is valid TypeScript:
+
+function logMessage1(message: string): void {
+  console.log(message);
+  return 'This value is ignored';
+}
+
+logMessage1('Hello, TypeScript!'); // Output: Hello, TypeScript!
