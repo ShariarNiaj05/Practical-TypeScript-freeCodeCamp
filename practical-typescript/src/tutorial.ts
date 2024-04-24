@@ -236,9 +236,23 @@ logMessage('Hello, TypeScript!'); // Output: Hello, TypeScript! */
 
 // It's important to note that in TypeScript, a function that is declared with a void return type can still return a value, but the value will be ignored.For example, the following code is valid TypeScript:
 
-function logMessage1(message: string): void {
+/* function logMessage1(message: string): void {
   console.log(message);
   return 'This value is ignored';
 }
 
-logMessage1('Hello, TypeScript!'); // Output: Hello, TypeScript!
+logMessage1('Hello, TypeScript!'); // Output: Hello, TypeScript! */
+
+
+// Functions - Using Union Types as Function Parameters
+
+function processInput(input: string | number) {
+  if (typeof input === 'number') {
+    console.log(input * 2);
+  } else {
+    console.log(input.toUpperCase());
+  }
+}
+
+processInput(10); // Output: 20
+processInput('Hello'); // Output: HELLO
