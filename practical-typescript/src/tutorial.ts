@@ -258,3 +258,9 @@ processInput(10); // Output: 20
 processInput('Hello'); // Output: HELLO */
 
 // Functions - Using Objects as Function Parameters
+function createEmployee({ id }: { id: number }): {
+  id: number;
+  isActive: boolean;
+} {
+  return { id, isActive: id % 2 === 0 };
+}
