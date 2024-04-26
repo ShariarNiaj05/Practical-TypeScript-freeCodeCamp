@@ -246,7 +246,7 @@ logMessage1('Hello, TypeScript!'); // Output: Hello, TypeScript! */
 
 // Functions - Using Union Types as Function Parameters
 
-function processInput(input: string | number) {
+/* function processInput(input: string | number) {
   if (typeof input === 'number') {
     console.log(input * 2);
   } else {
@@ -255,4 +255,6 @@ function processInput(input: string | number) {
 }
 
 processInput(10); // Output: 20
-processInput('Hello'); // Output: HELLO
+processInput('Hello'); // Output: HELLO */
+
+// Functions - Using Objects as Function Parameters
