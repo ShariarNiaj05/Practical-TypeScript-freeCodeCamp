@@ -271,7 +271,7 @@ console.log(first, second); */
 
 
 // alternative
-function createStudent(student: { id: number; name: string }) {
+/* function createStudent(student: { id: number; name: string }) {
   console.log(`Welcome to the course ${student.name.toUpperCase()}!!!`);
 }
 
@@ -280,4 +280,19 @@ const newStudent = {
   name: 'anna',
 };
 
+createStudent(newStudent); */
+
+// Excess Property Checks
+
+function createStudent(student: { id: number; name: string }) {
+  console.log(`Welcome to the course ${student.name.toUpperCase()}!!!`);
+}
+
+const newStudent = {
+  id: 5,
+  name: 'anna',
+  email: 'anna@gmail.com',
+};
+
 createStudent(newStudent);
+createStudent({ id: 1, name: 'bob', email: 'bob@gmail.com' }); //Object literal may only specify known properties, and 'email' does not exist in type '{ id: number; name: string; }'.
